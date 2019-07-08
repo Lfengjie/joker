@@ -16,3 +16,8 @@ This is a SSH login tool
 1:192.168.88.128:22:root:toor:虚拟机web服务器
 
 - 密钥文件放在keys文件夹下,密码位置写成密钥文件名,文件名必须以.pem结尾
+
+### 设置别名
+- 编辑/etc/profile
+
+alias joker='/Users/didi/didicode/so/so.sh'
