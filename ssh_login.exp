@@ -7,7 +7,7 @@ set timeout 10
 
 spawn ssh $USER@$TARGET -p $PORT
 expect {
-    "yes/no" {send "yes\r"; exp_continue}
-    "assword" {send "$PASSWD\r"}
+     -re  "^.*yes/no.*$" {send "yes\r"; exp_continue}
+     -re  "^.*assword.*$" {send "$PASSWD\r"}
 }
 interact
